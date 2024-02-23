@@ -38,10 +38,18 @@ img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.references-section {
-    height: 400px; /* Adja meg a szekció magasságát, amin belül a görgethetőség megjelenik */
-    overflow-y: scroll; /* Függőleges görgethetőség engedélyezése */
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 10px;
+.section-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.references {
+    width: 70%; /* A referenciák részének szélessége */
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.points {
+    width: 30%; /* A pontok részének szélessége */
+    padding: 20px;
 }
