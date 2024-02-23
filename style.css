@@ -28,6 +28,7 @@ nav a {
 
 section {
     margin-top: 20px;
+    height: 100vh; /* Teljes képernyő magasságig terjedő szakaszok */
 }
 
 footer {
