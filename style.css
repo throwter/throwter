@@ -5,51 +5,28 @@ body {
     box-sizing: border-box;
 }
 
-header, nav, section, footer {
-    margin: 20px;
+header, footer {
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
     background-color: #f8f8f8;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-section {
-    margin-top: 20px;
+    border: 1px solid #ddd;
     text-align: center;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.section-container {
+#page-navigation {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
 }
 
-.references {
-    width: 70%; /* A referenciák részének szélessége */
-    padding: 20px;
-    border-right: 1px solid #ddd;
+.page-link {
+    padding: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: #ddd;
+    border-radius: 5px;
 }
 
-.points {
-    width: 30%; /* A pontok részének szélessége */
-    padding: 20px;
+#content {
+    text-align: center;
+    margin-top: 20px;
 }
