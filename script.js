@@ -17,7 +17,7 @@
 
         function showPage(index) {
             currentIndex = index;
-            content.innerText = texts[index];
+            content.innerHTML = texts[index];
 
             const pageLinks = document.querySelectorAll('.page-link');
             pageLinks.forEach((link, i) => {
@@ -27,6 +27,7 @@
                     link.style.backgroundColor = '#ddd';
                 }
             });
+            }
         }
     });
 </script>
