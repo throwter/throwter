@@ -5,28 +5,32 @@ body {
     box-sizing: border-box;
 }
 
-header, footer {
+header, nav, section, footer {
+    margin: 20px;
     padding: 20px;
-    background-color: #f8f8f8;
     border: 1px solid #ddd;
-    text-align: center;
+    border-radius: 10px;
+    background-color: #f8f8f8;
 }
 
-#page-navigation {
+nav ul {
+    list-style-type: none;
+    padding: 0;
     display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    justify-content: space-around;
 }
 
-.page-link {
-    padding: 10px;
-    margin: 0 5px;
-    cursor: pointer;
-    background-color: #ddd;
-    border-radius: 5px;
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
 }
 
-#content {
-    text-align: center;
+section {
     margin-top: 20px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
 }
