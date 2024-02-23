@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Szövegek tömbje
-    const texts = ["Szöveg 1", "Szöveg 2", "Szöveg 3", "Szöveg 4"];
+    const texts = ["alma", "körte", "banán", "citrom"];
 
     // Az aktuális oldal indexe
     let currentIndex = 0;
