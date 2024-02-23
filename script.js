@@ -1,41 +1,32 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Szövegek tömbje
-    const texts = ["alma", "körte", "banán", "citrom"];
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const texts = ["Rólam szóló szöveg", "Szolgáltatásokkal kapcsolatos szöveg", "Portfólió szöveg", "Referenciák szöveg", "Kapcsolat szöveg"];
+        let currentIndex = 0;
 
-    // Az aktuális oldal indexe
-    let currentIndex = 0;
+        const navigation = document.getElementById('page-navigation');
+        const content = document.getElementById('content');
 
-    // HTML elemek referenciáinak lekérése
-    const navigation = document.getElementById('page-navigation');
-    const content = document.getElementById('content');
-
-    // Navigációs pontok (oldalak) létrehozása
-    texts.forEach((text, index) => {
-        const pageLink = document.createElement('div');
-        pageLink.classList.add('page-link');
-        pageLink.innerText = index + 1;
-        pageLink.addEventListener('click', () => showPage(index));
-        navigation.appendChild(pageLink);
-    });
-
-    // Az aktuális oldal megjelenítése
-    showPage(currentIndex);
-
-    // Oldal váltása
-    function showPage(index) {
-        currentIndex = index;
-        content.innerText = texts[index];
-
-        // Aktív oldal kiemelése a navigáción
-        const pageLinks = document.querySelectorAll('.page-link');
-        pageLinks.forEach((link, i) => {
-            if (i === index) {
-                link.style.backgroundColor = '#555';
-                link.style.color = '#fff';
-            } else {
-                link.style.backgroundColor = '#ddd';
-                link.style.color = '#000';
-            }
+        texts.forEach((text, index) => {
+            const pageLink = document.createElement('div');
+            pageLink.classList.add('page-link');
+            pageLink.addEventListener('click', () => showPage(index));
+            navigation.appendChild(pageLink);
         });
-    }
-});
+
+        showPage(currentIndex);
+
+        function showPage(index) {
+            currentIndex = index;
+            content.innerText = texts[index];
+
+            const pageLinks = document.querySelectorAll('.page-link');
+            pageLinks.forEach((link, i) => {
+                if (i === index) {
+                    link.style.backgroundColor = '#555';
+                } else {
+                    link.style.backgroundColor = '#ddd';
+                }
+            });
+        }
+    });
+</script>
